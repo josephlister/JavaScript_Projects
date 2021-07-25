@@ -5,6 +5,6 @@ function My_dictionary() {
         age:6,
         color:"brown"
     };
-    delete Animal.nickname; // Utilizing the delete operator
+    delete Animal.Nickname; // Utilizing the delete operator
 document.getElementById("dictionary").innerHTML = Animal.Nickname;
 }
