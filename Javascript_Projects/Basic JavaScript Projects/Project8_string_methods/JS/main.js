@@ -44,3 +44,4 @@ function Slice_function() { //Slice Method
      var Str = "Valueof returns primitive form.";
      document.getElementById("primitive").innerHTML = Str.valueOf();
  }
+ 
