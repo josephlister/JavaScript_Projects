@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="./CSS/One_Page_Website.css">
+		<script src="./JS/One_Page_Website.js"></script>
+		<title>Lewis Barbeque</title>
+	</head>
+	<body>
+
+		<!-- NAV -->
+		<div>
+			<div>
+				<ul>
+					<a href="#home" id="link"><li>HOME</li></a>
+					<a href="#gallery" id="link"><li>GALLERY</li></a>
+					<a href="#contact" id="link"><li>RESERVATIONS</li></a>
+				</ul>
+			</div>
+		</div>
+		<!-- END NAV -->
+
+		<!-- HOME -->
+		<div id="home">
+			<div>
+				<div>
+					<span>Lewis Barbeque</span>
+					<p>Meet John Lewis.</p>
+					<iframe width="591" height="360" src="https://www.youtube.com/embed/yfgHbwZgl-E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		<!-- END HOME -->
+
+		<!-- GALLERY -->
+		<section>
+			<div id="gallery">
+				<h1>Gallery</h1>
+				<div class="flex-container">
+
+					<!-- PHOTO-CONTAINER 1 -->
+					<div>
+						<div>
+							<img src=".\Images\Brisket_Image.jpg" alt="Brisket from Lewis BBQ"
+								onclick="openModal();currentSlide(1)" class="hover-shadow">
+							<div>
+								<p>Order delicious beef brisket from Lewis BBQ today!</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINER 1 -->
+
+					<!-- PHOTO-CONTAINER 2 -->
+					<div>
+						<div>
+							<img src=".\Images\Pork_Shoulder_Image.jpg" alt="Pulled pork sandwich from Lewis BBQ"
+								onclick="openModal();currentSlide(2)" class="hover-shadow">
+							<div>
+								<p>Order tender pulled pork from Lewis BBQ today!</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINER 2 -->
+
+					<!-- PHOTO-CONTAINER 3 -->
+					<div>
+						<div>
+							<img src=".\Images\Pork_Ribs_Image.jpg" alt="Pork ribs from Lewis BBQ"
+								onclick="openModal();currentSlide(3)" class="hover-shadow">
+							<div>
+								<p>Order spare pork ribs from Lewis BBQ today!</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINER 3 -->
+
+					<!-- PHOTO-CONTAINER 4 -->
+					<div>
+						<div>
+							<img src=".\Images\Sausage_Image.jpg" alt="Hot guts from Lewis BBQ"
+								onclick="openModal();currentSlide(4)" class="hover-shadow">
+							<div>
+								<p>Order the savory hot guts from Lews BBQ today!</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINER 4 -->
+
+					<!-- PHOTO-CONTAINER 5 -->
+					<div>
+						<div>
+							<img src=".\Images\Beef_Rib_Image.jpg" alt="Beef Ribs from Lewis BBQ"
+								onclick="openModal();currentSlide(5)" class="hover-shadow">
+							<div>
+								<p>SATURDAYS ONLY! Order beef ribs from Lewis BBQ!</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINER 5 -->
+
+					<!-- MODAL/LIGHTBOX -->
+					<div id="myModal" class="modal">
+						<span class="close cursor" onclick="closeModal()">&times;</span>
+						<div class="modal-content">
+							<div class="mySlides">
+								<div class="numbertext">1 / 5</div>
+								<img src="./Images/Brisket_Image.jpg" style="width:100%">
+							</div>
+							<di class="mySlides">
+								<div class="numbertext">2 / 5</div>
+								<img src="./Images/Pork_Shoulder_Image.jpg" style="width:100%">
+							</div>
+							<div class="mySlides">
+								<div class="numbertext">3 / 5</div>
+								<img src="./Images/Pork_Ribs_Image.jpg" style="width:100%">
+							</div>
+							<div class="mySlides">
+								<div class="numbertext">4 / 5</div>
+								<img src="./Images/Sausage_Image.jpg" style="width:100%">
+							</div>
+							<div class="mySlides">
+								<div class="numbertext">5 / 5</div>
+								<img src="./Images/Beef_Rib_Image.jpg" style="width:100%">
+							</div>
+
+							<!-- NEXT/PREVIOUS -->
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+							<!-- CAPTION TEXT -->
+							<div class="caption-container">
+								<p id="caption"></p>
+							</div>
+
+							<!-- THUMBNAIL IMAGE CONTROL -->
+							<div class="column">
+								<img class="demo" src="./Images/Brisket_Image.jpg" onclick="currentSlide(1)" alt="Brisket">
+							</div>
+							<div class="column">
+								<img class="demo" src="./Images/Pork_Shoulder_Image.jpg" onclick="currentSlide(1)" alt="Pork Shoulder">
+							</div>
+							<div class="column">
+								<img class="demo" src="./Images/Pork_Ribs_Image.jpg" onclick="currentSlide(1)" alt="Pork Ribs">
+							</div>
+							<div class="column">
+								<img class="demo" src="./Images/Sausage_Image.jpg" onclick="currentSlide(1)" alt="Texas Hot Guts">
+							</div>
+							<div class="column">
+								<img class="demo" src="./Images/Beef_Rib_Image.jpg" onclick="currentSlide(1)" alt="Beef Ribs">
+							</div>
+						</div>
+					</div>
+					<!-- END MODAL/LIGHTBOX -->
+
+				</div>
+			</div>
+		</section>
+		<!-- END GALLERY -->
+
+		<!-- RSVP -->
+		<section>
+			<div id="contact">
+				<div>
+					<h1>Order by phone or email</h1>
+					<div>
+						<h2><span>Your order is just a few steps away</span>
+							<br />Order by phone or email!
+						</h2>
+						<p>
+							Please provide us your basic contact information.
+						</p>
+						<div>
+							<form action="" method="post">
+								<input class="rsvp" type="text" value="First Name">
+								<input class="rsvp" type="text" value="Last Name">
+								<input class="rsvp" type="text" value="Email Address">
+								<input class="rsvp" type="text" value="Phone Number">
+								<div>
+									<input type="submit" value="Submit">
+								</div>
+								<div class="form-spacer">
+									<label class="terms">Terms and Conditions</label>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END RSVP -->
+
+		<!-- FOOTER -->
+		<div>
+			www.lewisbbq.com &nbsp;&nbsp; &copy; 2016
+		</div>
+		<!-- END FOOTER -->
+
+	</body>
+</html>

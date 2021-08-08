@@ -1,0 +1,164 @@
+body {
+    background-color: rgb(235, 200, 100);
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 12px;
+}
+
+footer {
+    text-align: center;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+table {
+    border: 3px solid red;
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid black;
+    padding: 18px;
+    background-color: rosybrown;
+}
+
+td {
+    border: 1px solid black;
+    padding: 18px;
+}
+
+.text-overlay {
+    position: relative;
+    text-align: center;
+    margin: 30px;
+    color: rgb(128, 165, 180);
+}
+
+.bottom-right {
+    font-weight: bold;
+    font-size: 20pt;
+    position: absolute;
+    bottom: 8px;
+    right: 26%;
+    z-index: 11;
+}
+
+.nav-bar {
+    color: #000;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    background-color: rgb(128, 165, 180);
+    border: 2px solid red;
+    z-index: 10;
+}
+
+.nav-bar a {
+    float: left;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 8px 10px;
+}
+
+.nav-bar a:hover {
+    background-color: rgb(100, 80, 255);
+    color: #000;
+}
+
+.video-center {
+    display: block;
+    width: 680px;
+    margin: 0 auto;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    height: 400px;
+    font-size: 32pt;
+    color: rgb(100, 80, 255);
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.table-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  a:link {
+    color: green;
+  }
+ 
+  a:visited {
+    color: green;
+  }
+  
+  a:hover {
+    color: red;
+  }
+  
+  a:active {
+    color: yellow;
+  }
+
+  :hover {
+    css declarations;
+  }
+
+  .container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1s ease;
+    background-color: #7a5011;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
