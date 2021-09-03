@@ -1,0 +1,126 @@
+/* Open contact form */
+/* Sticky button */
+.open-button {
+  background-color: rgb(2, 110, 20);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: sticky;
+  position: -webkit-sticky;
+  top:99%;
+  left: 90%;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 2;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: rgb(2, 110, 20);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Cancel button background color */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Hover effects */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/* @keyframes element */
+.keyBox {
+    float: right;
+    height: 100px;
+    width: 100px;
+    background: green;
+    position: relative;
+    animation: myMove 4s infinite;
+}
+
+@keyframes myMove {
+    from {top: 200px;}
+    to {top: 350px;}
+}
+
+/* Zoom in and out on picture */
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+.zoomImage {
+    animation: zoomInOut 15s forwards;
+}
+
+/* Add smooth scrolling effect to NAV */
+
+.nav {
+    scroll-behavior: smooth;
+}
+
+/* Slideshow */
+
+#slideshow {
+    display: block;
+    margin: 50px auto;
+    position: relative;
+    padding: 10px;
+}
+
+#slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+.fillContent {
+    position: absolute;
+    top: 850px;
+}

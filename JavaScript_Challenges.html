@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript Challenges</title>
+        <script src="./JavaScript/JavaScript_Challenge.js"></script>
+        <link rel="stylesheet" href="./CSS/JavaScript_Challenge.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <!-- NAV -->
+        <ul class="menu">
+            <a href="#popForm" class="nav"><li>Pop Up Form</li></a>
+            <a href="#paragraphNav" class="nav"><li>Paragraph</li></a>
+            <a href="#slideshow" class="nav"><li>Slideshow</li></a>
+        </ul>
+        <div>
+            <form name="myForm" onsubmit="return validateForm()"> <!-- FORM -->
+                <label for="firstname">First Name:</label><br>
+                <input type="text" id="firstname" name="firstname"><br>
+                <label for="phonenumber">Phone Number</label><br>
+                <input type="number" id="phonenumber" name="phonenumber"><br>
+                <input type="submit" value="Submit" class="submit">
+            </form>
+        </div>
+
+        <!-- @KEYFRAMES ELEMENT -->
+
+        <div class="keyBox"></div>
+
+        <!-- ZOOM IN AND OUT EFFECT -->
+
+        <img src="One Page Website/Images/Brisket_Image.jpg" class="zoomImage">
+
+        <!-- SLIDESHOW -->
+
+    <!-- jQuery FOR SLIDESHOW -->
+
+    <script>
+        $("#slideshow > div:gt(0)").hide();
+
+        setInterval(function() {
+            $('#slideshow > div:first')
+            .fadeOut(1000)
+            .next()
+            .fadeIn(1000)
+            .end()
+            .appendTo('#slideshow');
+        }, 3000);
+    </script>
+
+        <div id="slideshow">
+            <div>
+                <img src="One Page Website/Images/Beef_Rib_Image.jpg" alt="beef ribs">
+            </div>
+            <div>
+                <img src="One Page Website/Images/Pork_Ribs_Image.jpg" alt="pork ribs">
+            </div>
+            <div>
+                <img src="One Page Website/Images/Pork_Shoulder_Image.jpg" alt="pork shoulder">
+            </div>
+        </div>
+        
+        <div class="fillContent">
+            <h1 id="paragraphNav">This is a header.</h1>
+                <p>This is a paragraph to be targeted by the Paragraph section of the navigation element. <br>
+                    The purpose of this text is to fill space. <br>
+                    Feel free to keep reading if you would like. <br>
+                    Remains to be seen if glass coffins become popular.
+
+                </p>
+        </div>
+
+        <!-- POPUP FORM -->
+
+        <button class="open-button" onclick="openForm()">Contact</button>
+        <div class="form-popup" id="popForm">
+            <form class="form-container">
+                <h1>Contact</h1>
+                <input type="text" placeholder="First Name" name="fname" required><br>
+                <input type="text" placeholder="Last Name" name="lname" required><br>
+                <input type="text" placeholder="Email" name="email" required><br>
+                <button type="button" class="btn">Login</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+        
+    </body>
+</html>
