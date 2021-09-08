@@ -5,7 +5,7 @@ These are some small projects I have made using JavaScript.
 <h3>Projects</h3>
 
 <ul>
- <li>Pizza Menu</li>
+ <li><a href="https://github.com/josephlister/JavaScript_Projects/tree/main/Pizza_Project">Pizza Menu</a></li>
  <li><a href="https://github.com/josephlister/JavaScript_Projects/tree/main/TicTacToe">Tic-Tac-Toe Game</a></li>
  <li>Calculator</li>
 </ul>
