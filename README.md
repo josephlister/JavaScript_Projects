@@ -7,7 +7,7 @@ These are some small projects I have made using JavaScript.
 <ul>
  <li><a href="https://github.com/josephlister/JavaScript_Projects/tree/main/Pizza_Project">Pizza Menu</a></li>
  <li><a href="https://github.com/josephlister/JavaScript_Projects/tree/main/TicTacToe">Tic-Tac-Toe Game</a></li>
- <li>Calculator</li>
+ <li><a href="https://github.com/josephlister/JavaScript_Projects/blob/main/Calculator.html">Calculator</a></li>
 </ul>
 
 <h4>Pizza Menu</h4>
